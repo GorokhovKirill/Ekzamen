@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon">
+
+    <LinearLayout
+        android:layout_width="234dp"
+        android:layout_height="253dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.573">
+
+        <TextView
+            android:id="@+id/Header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Sign In"
+            android:textColor="#FDFCFC"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edEmail"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FAF9F9" />
+
+        <EditText
+            android:id="@+id/edPassword"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:ems="10"
+            android:hint="******"
+            android:inputType="textPassword"
+            android:textColor="#FDFDFD"
+            android:textColorHint="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/NewAccount"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:onClick="onClickAccount"
+            android:text="How a Account?"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/edSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign in" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
